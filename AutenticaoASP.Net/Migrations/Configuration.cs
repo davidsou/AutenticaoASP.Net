@@ -10,6 +10,7 @@ namespace AutenticaoASP.Net.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+
         }
 
         protected override void Seed(AutenticaoASP.Net.Models.UsuariosContext context)

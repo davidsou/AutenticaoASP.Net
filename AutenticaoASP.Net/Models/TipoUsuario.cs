@@ -8,6 +8,7 @@ namespace AutenticaoASP.Net.Models
     public enum TipoUsuario
     {
         Padrao,
-        Administrador
+        Administrador,
+        NovoPapel
     }
 }
