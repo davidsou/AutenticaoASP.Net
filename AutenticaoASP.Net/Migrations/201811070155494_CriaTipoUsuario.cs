@@ -7,12 +7,13 @@ namespace AutenticaoASP.Net.Migrations
     {
         public override void Up()
         {
-            DropColumn("dbo.Usuarios", "Tipo");
+            AddColumn("dbo.Usuarios", "Tipo", c => c.Int(nullable: false));
         }
         
         public override void Down()
         {
-            AddColumn("dbo.Usuarios", "Tipo", c => c.Int(nullable: false));
+            DropColumn("dbo.Usuarios", "Tipo");
+            
         }
     }
 }
