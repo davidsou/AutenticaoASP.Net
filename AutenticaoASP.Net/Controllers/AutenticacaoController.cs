@@ -78,7 +78,8 @@ namespace AutenticaoASP.Net.Controllers
             var identity = new ClaimsIdentity(new[]
             {
                 new Claim (ClaimTypes.Name, usuario.Nome),
-                new Claim ("Login", usuario.Login)
+                new Claim ("Login", usuario.Login),
+                new Claim (ClaimTypes.Role, usuario.Tipo.ToString())
             }, "ApplicationCookie");
 
             Request.GetOwinContext().Authentication.SignIn(identity);

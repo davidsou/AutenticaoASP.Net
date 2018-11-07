@@ -131,17 +131,13 @@
   <ItemGroup>
     <Compile Include="Content\App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AutenticacaoController.cs" />
+    <Compile Include="Controllers\CadastroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PainelController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811070155494_CriaTipoUsuario.cs" />
-    <Compile Include="Migrations\201811070155494_CriaTipoUsuario.Designer.cs">
-      <DependentUpon>201811070155494_CriaTipoUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\TipoUsuario.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\UsuariosContext.cs" />
@@ -175,11 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811070155494_CriaTipoUsuario.resx">
-      <DependentUpon>201811070155494_CriaTipoUsuario.cs</DependentUpon>
-    </EmbeddedResource>
+    <Folder Include="Views\Cadastro\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

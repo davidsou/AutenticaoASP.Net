@@ -1,1 +1,1 @@
-﻿SELECT * FROM Usuarios
+SELECT * FROM Usuarios
